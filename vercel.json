@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    { 
+      "src": "subconverter/subconverter.exe", 
+      "use": "@vercel/static",
+      "config": {
+                "output": "./",
+                "port": 25500,
+                "timeout": 1500,
+                "includeFiles": [
+                    "subconverter/**"
+                ]
+            }
+    }
+  ],
+  "routes": [
+    {"src": "/(.*)", "dest": "subconverter/subconverter.exe"}
+  ]
+}
