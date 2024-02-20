@@ -5,7 +5,6 @@
         {
             "src": "subconverter/subconverter.exe",
             "use": "now-static-bin",
-            "outputDirectory": "./",
             "config": {
                 "output": "./",
                 "port": 25500,
